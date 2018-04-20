@@ -1,0 +1,57 @@
+{
+  "@context": "http://www.w3.org/ns/csvw",
+  "url": "organs.csv",
+  "dc:title": "Musical Organs from Brazil",
+  "dc:description": "From http://orgaopedia.com.br/instrumentos/caracteristicas",
+  "dc:creator": "Projeto Órgãopedia",
+  "tableSchema": {
+    "columns": [{
+      "titles": "state",
+      "required": true,
+      "dc:description": "A lowercase two-letter code for a state.",
+      "datatype": {
+        "dc:title:" State",
+        "base": "string",
+        "format": "[a-z]{2}"
+      }
+    },{
+      "titles": "city",
+      "required": true,
+      "datatype": {
+        "base": "string",
+        "minLength": "1",
+        "maxLength": "400"
+      }
+    },{
+      "titles": "location",
+      "datatype": "string",
+      "required": true
+    },{
+      "titles": "maker",
+      "null": "NA",
+      "datatype": "string"
+    },{
+      "titles": "year",
+      "datatype": {
+        "base": "integer",
+        "minimum": -100,
+        "maximum": 9999999
+      }
+    },{
+      "titles": "registers",
+      "null": "NA",
+      "datatype": "string"
+    },{
+      "titles": "manuals",
+      "null": "NA",
+      "datatype": "integer"
+    }, {
+      "titles": "pedals",
+      "null": "NA",
+      "datatype": {
+        "base": "string",
+        "format": "Y|y|N|n"
+      }
+    }]
+  }
+}
