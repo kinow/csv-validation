@@ -10,7 +10,7 @@
       "required": true,
       "dc:description": "A lowercase two-letter code for a state.",
       "datatype": {
-        "dc:title:" "State",
+        "dc:title": "State",
         "base": "string",
         "format": "[a-z]{2}"
       }
