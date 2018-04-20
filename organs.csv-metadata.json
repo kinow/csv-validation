@@ -1,6 +1,6 @@
 {
   "@context": "http://www.w3.org/ns/csvw",
-  "url": "organs.csv",
+  "url": "https://raw.githubusercontent.com/kinow/csv-validation/master/organs.csv",
   "dc:title": "Musical Organs from Brazil",
   "dc:description": "From http://orgaopedia.com.br/instrumentos/caracteristicas",
   "dc:creator": "Projeto Órgãopedia",
